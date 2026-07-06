@@ -3,6 +3,19 @@
 # 📊 Climate Matrix & Embedded Sensors Dashboard
 An advanced, production-grade cross-platform Flutter application seamlessly integrated with an Arduino firmware architecture. This system tracks real-time environmental telemetry, structural metrics, and toxic carbon monoxide levels, presenting them through a modern glassmorphic UI layout.
 
+
+## ⚠️ CRITICAL CONFIGURATION FOR NEW USERS 
+
+Before compiling and installing this application on a new device or tablet, **you must change the Bluetooth MAC Address** inside the code to match your specific HC-05 module. If this is not updated, the application will fail to discover or establish a connection tunnel with the hardware.
+
+### How to Update the MAC Address:
+1. Open the Flutter project in VS Code.
+2. Navigate to the core UI file: `lib/main.dart`.
+3. Locate the variable definition named `hc05MacAddress` (around line 45-50):
+   ```dart
+   // Change this address to match your own HC-05 module's physical address
+   final String hc05MacAddress = "17:3C:9A:1D:14:0E";
+
 ---
 
 ## ⚡ Embedded Hardware & Arduino Features
