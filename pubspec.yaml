@@ -1,0 +1,39 @@
+name: atmo_stream
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  flutter_bluetooth_serial_ble: ^0.5.0
+  permission_handler: ^11.3.1
+  fl_chart: ^0.66.0
+  shared_preferences: ^2.2.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  # FIXED: Launcher icons ko dependencies se hata kar dev_dependencies me daal diya hai
+  flutter_launcher_icons: ^0.14.4 
+
+flutter:
+  uses-material-design: true
+
+  # FIXED: Assets configuration ko uncomment karke icon path link kar diya hai
+  assets:
+    - assets/icon.png
+
+# FIXED: Ekdum left margin se proper indentation set kar di hai
+flutter_launcher_icons:
+  android: "launcher_icon"  
+  ios: true                 
+  image_path: "assets/icon.png" # Make sure aapka naya logo isi naam se assets folder me ho
+  remove_alpha_ios: true

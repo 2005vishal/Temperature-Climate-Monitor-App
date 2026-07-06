@@ -1,0 +1,7 @@
+android: "launcher_icon"
+ios: true
+image_path: "assets/icon.png"
+
+# Adaptive configuration taaki white box hat jaye aur ChatGPT jaisa bada dikhe
+adaptive_icon_background: "#050510"
+adaptive_icon_foreground: "assets/icon.png"
