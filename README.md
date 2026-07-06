@@ -65,6 +65,24 @@ Here is a visual matrix of the application interface running on the tablet dashb
 
 ---
 
+---
+
+## Components
+
+1. Arduino Uno
+2. MQ7 Gas Sensor
+3. DHT11 Sensor
+4. HC-05 / HC-06 Bluetooth
+5. TP4056 Charging Module
+6. 18650 Lithium-ion Battery(as per need) + battery holder
+7. XL6009 Boost Converter
+8. BC547 NPN Transistor
+9. 5V Buzzer
+10. 1k ohm Resistors (3)
+11. Breadboard & Jumper Wires
+
+---
+
 ## 📁 Repository Structure
 
 ```text
